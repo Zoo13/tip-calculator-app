@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+    <img src="images/logo.svg">
+</header>
+
+<body>
+    <main>
+        <div class="main-container">
+            <div class="left-container">
+                <div class="bill-input-container">
+                    <p>Bill</p>
+                    <input id="bill-amount" type="number" placeholder="0.0">
+                    <img src="images/icon-dollar.svg" id="dollar-icon">
+                </div>
+                <p id="select-tip"> Select Tip % </p>
+                <div class="tip-rate-block">
+                    <button class="tip-rate-btn" id="5%"> 5% </button>
+                    <button class="tip-rate-btn"> 10% </button>
+                    <button class="tip-rate-btn"> 15% </button>
+                    <button class="tip-rate-btn"> 25% </button>
+                    <button class="tip-rate-btn"> 50% </button>
+                    <input id="tip-rate" type="number" class="tip-rate-btn" placeholder="Custum">
+                </div>
+                <div class="error-cont">
+                    <p>Number of People</p>
+                    <p id="error"></p>
+                </div>
+                <div class="people-container">
+                    <input type="number" value="1" min="1" max="999" id="num-of-people">
+                    <img src="images/icon-person.svg" id="person-icon">
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="tip-cont">
+                    Tip Amount: 
+
+                    <span id="tip-result-screen"> $ 0.00 </span><br>
+                    <span>/ person</span>
+                </div>
+                <div class="total-cont">
+                    Total: 
+                    <span id="total-result-screen"> $ 0.00 </span> <br>
+                    <span>/ person </span>
+                    
+                </div>
+                <button id="btn"> Reset </button>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

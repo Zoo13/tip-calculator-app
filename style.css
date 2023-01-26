@@ -1,0 +1,235 @@
+body , h1 , h2 , h3 , p {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #C5E4E7;
+    margin: auto;
+    font-family: 'Space Mono', monospace;
+}
+button {
+    font-family: 'Space Mono';
+    font-size: 24px;
+}
+input {
+    font-family: 'Space Mono';
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+p {
+    color: #5E7A7D;
+}
+
+.bill-input-container > #dollar-icon {
+    position: absolute;
+    left: 4%;
+    top: 55%;
+}
+.bill-input-container > p {
+    margin-bottom: 2%;
+    
+}
+.bill-input-container {
+    margin-bottom: 10%;
+    position: relative;
+
+}
+#select-tip {
+    margin-bottom: 2%;
+}
+
+#bill-amount {
+    text-align: right;
+    width: 97%;
+    height: 46px;
+    border: none;
+    background-color: #F3F9FA;
+    color: #00474B;
+    font-size: 24px;
+}
+
+.main-container {
+    background-color: white;
+    padding: 8.55% 8.55% 8.55% 8.55%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.tip-rate-block {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin-bottom: 40px;
+}
+.tip-rate-btn {
+    padding: 5%;
+    background-color: #00474B;
+    border:none;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+
+
+}
+#tip-rate {
+    padding: 5%;
+    width: 90%;
+    font-size: 24px;
+    background-color: #F3F9FA;
+    color: #00474B;
+    text-align: right;
+    font-size: 24px;
+
+}
+#tip-rate::placeholder {
+    color: #547878;
+    font-size: 24px;
+}
+.people-container p {
+    margin-bottom: 2%;
+}
+#num-of-people {
+    text-align: right;
+    width: 97%;
+    height: 46px;
+    border: none;
+    background-color: #F3F9FA;
+    color: #00474B;
+    font-size: 24px;
+}
+#num-of-people::placeholder {
+    color: #547878;
+    font-size: 24px;
+}
+.people-container {
+    position: relative;
+    margin-bottom: 10%;
+    margin-top: 2%;
+}
+.people-container > img{
+    position: absolute;
+    left: 4%;
+    top: 35%;
+}
+
+.right-container {
+    background-color: #00474B;
+    border-radius: 15px;
+    padding: 7%;
+    color: white;
+    font-size: 16px;
+    position: relative;
+}
+
+
+
+/* #tip-result-screen::before , #total-result-screen::before {
+    content: url(images/icon-dollar.svg);
+    filter: invert(56%) sepia(83%) saturate(357%) hue-rotate(123deg) brightness(95%) contrast(98%);
+    position: relative;
+} */
+#tip-result-screen , #total-result-screen{
+    font-size: 32px;
+    color: #26C2AE;
+    position: absolute;
+    right: 8%;
+    font-size: 32px;
+}
+span {
+    color: #7F9D9F;
+    font-size: 12px;
+}
+
+.tip-cont {
+    margin-bottom: 5%;
+}
+
+#btn {
+    background-color: #26C2AE;
+    border: none;
+    border-radius: 5px;
+    padding: 9px;
+    width: 100%;
+    margin-top: 5%;
+    color: #00474B;
+    font-size: 20px;
+}
+.tip-rate-block >button.active {
+    background-color: #26C2AE;
+    color : hsl(183, 100%, 15%);
+}
+.tip-rate-btn:hover {
+    cursor: pointer;
+    background-color: #9FE8DF
+}
+#btn:hover{
+    cursor: pointer;
+    background-color: #9FE8DF
+}
+#bill-amount:focus {
+    outline-color: #26C2AE;
+}
+#bill-amount:hover {
+    cursor: pointer;
+}
+#num-of-people:hover {
+    cursor: pointer;
+}
+#num-of-people:focus {
+    outline-color: #E17052;
+}
+.error-cont {
+    display: flex;
+    justify-content: space-between;
+}
+#error {
+    color: #E17052;
+}
+
+@media screen and (min-width: 1200px){
+    body {
+        margin: auto;
+        max-width: 1440px;
+    }
+    header {
+        margin-bottom: 6.04%;
+        margin-top: 11.32%;
+    }
+    main {
+        max-width: 920px;
+        margin: auto;
+    }
+    .main-container {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 5.22% 4.57% 5.22% 5.22%;
+        border-radius: 25px;
+    }
+    .left-container {
+        width: 45.65%;
+        margin-right: 5.79%;
+    }
+
+    .right-container {
+        width: 49.75%;
+    }
+    #btn {
+        margin-top: 34.567%;
+    }
+    #tip-result-screen , #total-result-screen{
+        font-size: 48px;
+    }
+    #tip-result-screen {
+        top: 10%;
+    }
+    #total-result-screen {
+        top: 30%;
+    }
+}
